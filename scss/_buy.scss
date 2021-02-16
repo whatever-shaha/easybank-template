@@ -1,0 +1,101 @@
+@import "variables";
+.buy{
+    background: $LightGrayishBlue;
+    &__title{   
+        margin-bottom: 3.5rem;
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            padding: 4rem 2rem 1.2rem 2rem;
+        }
+        p{
+            text-align: center;
+            
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        img{
+            padding-bottom: 1.5rem;
+            align-self: center;
+        }
+        h2{
+            // letter-spacing: 1px;
+            text-align: center;
+            font-size: 1.3125rem;//21px
+            padding-bottom: 1.45rem;
+        }
+        p{
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+//media for tablet
+@media (min-width:680px){
+    .buy{
+        p{
+            font-size: 1rem;
+        }
+        h1{
+            font-size: 2.55rem;
+        }
+        h2{
+            font-size: 1.55rem;
+        }
+    }
+}
+//media for desktop
+@media(min-width:901px){
+    .buy{
+        
+        .container{
+            max-width: 1112px;
+            flex-direction: row;
+            flex-wrap:wrap; 
+            padding-top: 2.5rem;
+            padding-bottom: 5rem;
+            p{
+                text-align: left;
+                font-weight: 400;
+            }
+        }
+        &__title{
+            width: 100%;
+            margin-bottom: 4.5rem;
+            h1{
+                text-align: left;
+                padding-left: 0;
+                // font-weight: 400;
+                padding-bottom: 1.5rem;
+                // font-size: 1.6rem;
+            }
+            p{
+                width: 39.5rem; 
+                letter-spacing: 0px;
+            }
+            
+        }
+        &__card{
+            max-width: 15rem;
+            align-items: start;
+            img{
+                align-self: start;
+                padding-bottom: 2.75rem;
+            }
+            h2{
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
+// fixer- media query located in bottom beacuse of property conflict 
+// of MAX WIDTH at @media(min-width:901px)
+@media(min-width:901px) and (max-width:1070px){
+    .buy__card{
+        max-width: 25rem;
+        width: 50%;
+    }
+}
