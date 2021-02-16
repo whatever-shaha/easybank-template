@@ -47,16 +47,13 @@ p{
     line-height: 1.55;
     font-size: 1rem;
 }
-// @media(max-width:1440px) {
-//     body{
-//         padding: 0 1rem;
-//     }
-// }
-// @media(max-width:500px) {
-//     body{
-//         padding: 0;
-//     }
-// }
+@media(max-width:900px) {
+    body{
+        min-height: 500px;
+    }
+}
+
+
 button{
     padding: 0.875rem 2.1875rem;
     background: linear-gradient(90deg, $LimeGreen, $BrightCyan);

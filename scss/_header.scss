@@ -88,7 +88,8 @@
         &__list{
             text-align: center;
             transition: all 0.5s ease-out;
-            height: 20.5rem;
+
+            height: 55vh;
             transform: translateX(-50%);
             position: absolute;
             z-index: 4;
@@ -97,7 +98,7 @@
             border-radius: 10px;
             background-color: #fff;
             flex-flow: column;
-            padding: 2.25rem 7rem;
+            padding: 8vh 7rem;
             a{  
                 font-size: $font-med;
                 color: $DarkBlue;
@@ -112,6 +113,6 @@
         }
     }
     .animList{
-        top: 6.5rem;
+        top: 5rem;
     }
 }

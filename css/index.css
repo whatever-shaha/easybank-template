@@ -69,7 +69,7 @@
     .header__list {
       text-align: center;
       transition: all 0.5s ease-out;
-      height: 20.5rem;
+      height: 55vh;
       transform: translateX(-50%);
       position: absolute;
       z-index: 4;
@@ -78,7 +78,7 @@
       border-radius: 10px;
       background-color: #fff;
       flex-flow: column;
-      padding: 2.25rem 7rem; }
+      padding: 8vh 7rem; }
       .header__list a {
         font-size: 1.125rem;
         color: #2d314d; }
@@ -87,7 +87,7 @@
     .header__button {
       display: none; }
   .animList {
-    top: 6.5rem; } }
+    top: 5rem; } }
 
 .container {
   max-width: 69.5rem;
@@ -127,6 +127,10 @@ p {
   letter-spacing: -0.75px;
   line-height: 1.55;
   font-size: 1rem; }
+
+@media (max-width: 900px) {
+  body {
+    min-height: 500px; } }
 
 button {
   padding: 0.875rem 2.1875rem;
