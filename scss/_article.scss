@@ -18,7 +18,33 @@
         margin: 0 auto;
         justify-content: space-between;
         height: 30rem;
-        // transform: scale(0.8);
+        transition: all 1s ease-in;
+        .slick-prev, .slick-next{
+            width: 25px;
+            height: 25px;
+            &::before{
+                content: "";
+                opacity: 0;
+            }
+        }
+        .slick-prev{
+            background-image: url("../img/prev.svg");
+            &:hover{
+                background:url("../img/prev.svg");
+            }
+            &:focus{
+                background:url("../img/prev.svg");
+            }            
+        }
+        .slick-next{
+            background-image: url("../img/next.svg");
+            &:hover{
+                background:url("../img/next.svg");
+            }
+            &:focus{
+                background:url("../img/next.svg");
+            }
+        }
     }
     &__card{
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -75,7 +101,4 @@
     }
 }
 
-.footer{
-    height: 500px;
-    background: $DarkBlue;
-}
+

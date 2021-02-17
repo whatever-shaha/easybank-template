@@ -37,6 +37,7 @@ $(document).ready(function(){
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows:false,
+                center:true,
               }
             }
             // You can unslick at a given breakpoint now by adding:
