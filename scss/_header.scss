@@ -1,9 +1,15 @@
 @import "variables";
-
+.headerTag{
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    width: 100%;
+}
+.white{color:#ffffff;}
 .header {
     max-width:  1112px;
     margin: 0 auto;
-   
+    
     &__list{
         width: 30%; 
         a{
@@ -11,7 +17,6 @@
             letter-spacing: 1px;
             display: block;
             font-size: $font-small;
-            color: $GrayishBlue;
             height: 100%;
             
             &:hover{
