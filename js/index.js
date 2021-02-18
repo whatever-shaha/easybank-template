@@ -34,7 +34,7 @@ $(document).ready(function(){
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 550,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -87,7 +87,7 @@ window.addEventListener("scroll" , () => {
     nav.style.top = 0;
     lastLoc = currentLoc;
   } else {
-    nav.style.top = '-90px';
+    nav.style.top = '-80px';
     nav.style.background = "white";
     lastLoc = currentLoc
   }

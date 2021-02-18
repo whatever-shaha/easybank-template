@@ -1,5 +1,103 @@
+@import "variables";
 .footer{
     height: 32rem;
     background: $DarkBlue;
-    
+    .container{
+        padding: 2.5rem 1.5rem;
+        text-align: center;
+    }
+
+    &__logo{
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        max-width: 11.5rem;
+        margin: 0 auto 2rem;
+        align-self: center;
+        a svg path{
+            transition: all 0.3s ease-out;    
+        }
+        a:hover{
+            svg path{
+                fill: $LimeGreen;
+            }
+        }  
+    }
+
+    &__links1, &__links2{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 5.5rem;
+        margin-bottom: 1rem;
+        a{
+            font-size: $font-small;
+            letter-spacing: normal;
+            transition: all 0.3s ease-out;
+            &:hover{
+                color: $LimeGreen;
+            }
+        }
+    }
+    &__button{
+        margin-top: 1rem;
+    }
+    &__copyright{
+        margin-top: 1.5rem;
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+}
+@media(min-width:901px) {
+    .footer{
+        height: 9rem;
+        padding: 1.5rem 1.5rem;
+        .container{
+            text-align: left;
+            display: grid;
+            grid-template-columns: 26% 17% 17% auto;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+            "logo links1 links2 button" 
+            "social links1 links2 copyright";
+            justify-items: start;
+            padding: 0;
+            height: 100%;
+
+        }
+        &__logo{
+            margin: 0;
+            padding-top: 1.5rem;
+            grid-area: logo;
+        }
+        &__social{
+            grid-area: social;
+            margin: 0;
+            width: 54%;
+        }
+        &__links1{
+            padding-top: 1.5rem;
+            grid-area: links1;
+        }
+        &__links2{
+            padding-top: 1.5rem;
+            grid-area: links2;
+          
+        }
+        &__button{
+            grid-area: button;
+            align-self: center;
+            justify-self: end;
+        }
+        &__copyright{
+            margin: 0;
+            grid-area: copyright;
+            align-self: center;
+            justify-self: end;
+        }
+    }
 }

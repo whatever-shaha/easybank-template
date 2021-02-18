@@ -1,9 +1,10 @@
 @import "variables";
 .headerTag{
     z-index: 5;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-out;
     position: fixed;
     width: 100%;
+    background-color:#ffffff;
 }
 .white{color:#ffffff;}
 .header {
@@ -87,13 +88,19 @@
     bottom: 0rem;
     z-index: 3;
 }
+
+@media(max-width:1100px){
+    .header__list{
+        width: 35%;
+    }
+}
 @media(max-width:900px){
     .header{
         padding: 20px;
         &__list{
+            
             text-align: center;
             transition: all 0.5s ease-out;
-
             height: 55vh;
             transform: translateX(-50%);
             position: absolute;

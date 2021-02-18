@@ -1,9 +1,10 @@
 @import url(reset.css);
 .headerTag {
   z-index: 5;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-out;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  background-color: #ffffff; }
 
 .white {
   color: #ffffff; }
@@ -70,6 +71,10 @@
   transition: all 0.5s ease-in-out;
   bottom: 0rem;
   z-index: 3; }
+
+@media (max-width: 1100px) {
+  .header__list {
+    width: 35%; } }
 
 @media (max-width: 900px) {
   .header {
@@ -378,5 +383,76 @@ a {
 .footer {
   height: 32rem;
   background: #2d314d; }
+  .footer .container {
+    padding: 2.5rem 1.5rem;
+    text-align: center; }
+  .footer__logo {
+    display: inline-block;
+    margin-bottom: 2rem; }
+  .footer__social {
+    display: flex;
+    justify-content: space-between;
+    max-width: 11.5rem;
+    margin: 0 auto 2rem;
+    align-self: center; }
+    .footer__social a svg path {
+      transition: all 0.3s ease-out; }
+    .footer__social a:hover svg path {
+      fill: #31d35c; }
+  .footer__links1, .footer__links2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 5.5rem;
+    margin-bottom: 1rem; }
+    .footer__links1 a, .footer__links2 a {
+      font-size: 0.875rem;
+      letter-spacing: normal;
+      transition: all 0.3s ease-out; }
+      .footer__links1 a:hover, .footer__links2 a:hover {
+        color: #31d35c; }
+  .footer__button {
+    margin-top: 1rem; }
+  .footer__copyright {
+    margin-top: 1.5rem;
+    font-size: 15px;
+    letter-spacing: normal; }
+
+@media (min-width: 901px) {
+  .footer {
+    height: 9rem;
+    padding: 1.5rem 1.5rem; }
+    .footer .container {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 26% 17% 17% auto;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "logo links1 links2 button"  "social links1 links2 copyright";
+      justify-items: start;
+      padding: 0;
+      height: 100%; }
+    .footer__logo {
+      margin: 0;
+      padding-top: 1.5rem;
+      grid-area: logo; }
+    .footer__social {
+      grid-area: social;
+      margin: 0;
+      width: 54%; }
+    .footer__links1 {
+      padding-top: 1.5rem;
+      grid-area: links1; }
+    .footer__links2 {
+      padding-top: 1.5rem;
+      grid-area: links2; }
+    .footer__button {
+      grid-area: button;
+      align-self: center;
+      justify-self: end; }
+    .footer__copyright {
+      margin: 0;
+      grid-area: copyright;
+      align-self: center;
+      justify-self: end; } }
 
 /*# sourceMappingURL=index.css.map */
